@@ -42,18 +42,21 @@ div#formulario {
     margin: 5px;
 }
 
-#femail {
-     background-color: red;
+div.campo {
+     background-color: blue;
      color: white;
+     height: 20px;
      border-radius: 5px;
-     padding: 10px;
-     margin-bottom: 5px;
+     padding: 10px 0px 10px 10px;
+     margin-bottom: 10px;
 }
 
-#fsenha {
-     background-color: red;
-     color: white;
-     border-radius: 5px;
-     padding: 10px;
-     margin-bottom: 5px;
+div.campo > input {
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 3px;
+    border: 0px;
+    transform: translateY(-3px);
+    width: 397px;
+    
 }
