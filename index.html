@@ -13,22 +13,22 @@
         </div>
         <div id="formulario">
             <h1>Login</h1>
-            <form action="cadastro.php">
+            <form action="cadastro.php" method="post">
                 <legend>Seja bem-vindo(a) novamente! Faça login para acessar sua conta.</legend>
                 <div class="campo">
                     <label for="iemail">E-mail: </label>
-                    <input type="text" name="email" id="iemail" required placeholder="digite seu e-mail">
+                    <input type="email" name="email" id="iemail" required placeholder="digite seu e-mail">
                 </div>
                 <div class="campo">
                     <label for="isenha">Senha: </label>
-                    <input type="text" name="senha" id="isenha" required placeholder="digite sua senha">
+                    <input type="password" name="senha" id="isenha" required placeholder="digite sua senha">
                 </div>
-                <p>
+                <div id="entrar">
                     <input type="submit" value="Entrar">
-                </p>
-                <p>
-                    <input type="" value="Esqueci minha senha">
-                </p>
+                </div>
+                <div id="forget">
+                    <input type="submit" value="Esqueci minha senha">
+                </div>
             </form>
         </div>
     </main>
