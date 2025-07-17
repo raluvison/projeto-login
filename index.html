@@ -5,32 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
-        <div id="imagem">
-            
-        </div>
-        <div id="formulario">
-            <h1>Login</h1>
-            <form action="cadastro.php" method="post">
-                <legend>Seja bem-vindo(a) novamente! Faça login para acessar sua conta.</legend>
-                <div class="campo">
-                    <label for="iemail">E-mail: </label>
-                    <input type="email" name="email" id="iemail" required placeholder="digite seu e-mail">
-                </div>
-                <div class="campo">
-                    <label for="isenha">Senha: </label>
-                    <input type="password" name="senha" id="isenha" required placeholder="digite sua senha">
-                </div>
-                <div id="entrar">
-                    <input type="submit" value="Entrar">
-                </div>
-                <div id="forget">
-                    <input type="submit" value="Esqueci minha senha">
-                </div>
-            </form>
-        </div>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <form action="cadastro.php" method="post">
+                    <legend>Seja bem-vindo(a) novamente! Faça login para acessar sua conta.</legend>
+                    <div class="campo">
+                        <label for="iemail"> <span id="mail" class="material-symbols-outlined">person</span></label>
+                        <input type="email" name="email" id="iemail" required placeholder="digite seu e-mail">
+                    </div>
+                    <div class="campo">
+                        <label for="isenha"> <span id="mail" class="material-symbols-outlined">key</span> </label>
+                        <input type="password" name="senha" id="isenha" required placeholder="digite sua senha">
+                    </div>
+                    <div id="entrar">
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <div id="forget">
+                        <input type="submit" value="Esqueci minha senha">
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
