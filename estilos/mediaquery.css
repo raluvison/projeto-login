@@ -1,37 +1,66 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px){
-
-    * {
-        box-sizing: border-box;
-    }
-    
-    main {
-    background-color: white;
-    width: 600px;
-    margin: auto;
-    margin-top: 10%;
-    border-radius: 10px;
+    body {
+        background-image: linear-gradient(to top, rgb(7, 7, 116), rgb(70, 0, 128));
     }
 
     section#login {
         width: 80vw;
-        height: 350px;
+        height: 310px;
     }
 
     div#imagem {
         width: 30%;
-        height: 350px;
-        display: block;
+        height: 100%;
         float: left;
-        border-radius: 10px 0px 0px 10px;
     }
 
     div#formulario {
         width: 70%;
-        display: block;
         float: right;
-        
+    }
+
+    div#formulario > h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    div#formulario > form > legend {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, rgb(7, 7, 116), rgb(70, 0, 128));
+    }
+    
+    section#login {
+        width: 80vw;
+        height: 310px;
+    }
+
+    div#imagem {
+        width: 30%;
+        height: 100%;
+        float: right;
+    }
+
+    div#formulario {
+        width: 70%;
+        float: left;
+    }
+
+    div#formulario > h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+
+    div#formulario > form > legend {
+        font-size: 1em;
+        margin-bottom: 10px;
     }
 }
 
